@@ -1,0 +1,354 @@
+/* Shared light content pages: Projects / FAQ / About spacing fixes */
+.content-page {
+  background: #ffffff !important;
+  color: #0f172a !important;
+}
+
+.content-container {
+  width: 100% !important;
+  max-width: 1200px !important;
+  margin: 0 auto !important;
+  padding: 0 28px !important;
+  box-sizing: border-box !important;
+}
+
+.content-hero {
+  padding: 56px 0 40px !important;
+  background:
+    radial-gradient(circle at 90% 0%, rgba(34, 197, 94, 0.1), transparent 30%),
+    linear-gradient(180deg, #f8fafc 0%, #ffffff 75%) !important;
+}
+
+.content-eyebrow {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+  padding: 8px 14px !important;
+  margin: 0 0 16px !important;
+  border-radius: 999px !important;
+  background: #f0fdf4 !important;
+  border: 1px solid #bbf7d0 !important;
+  color: #166534 !important;
+  font-size: 13px !important;
+  font-weight: 700 !important;
+}
+
+.content-h1 {
+  margin: 0 !important;
+  max-width: 18ch !important;
+  font-size: clamp(2rem, 4vw, 3.2rem) !important;
+  line-height: 1.15 !important;
+  font-weight: 800 !important;
+  letter-spacing: -0.01em !important;
+  color: #0f172a !important;
+}
+
+.content-lead {
+  margin: 16px 0 0 !important;
+  max-width: 62ch !important;
+  font-size: 16px !important;
+  line-height: 1.7 !important;
+  color: #64748b !important;
+}
+
+.content-section {
+  padding: 40px 0 72px !important;
+}
+
+.content-chips {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  gap: 10px !important;
+  margin-top: 22px !important;
+}
+
+.content-chip {
+  padding: 10px 16px !important;
+  border-radius: 999px !important;
+  border: 1px solid #e2e8f0 !important;
+  background: #ffffff !important;
+  color: #475569 !important;
+  font-size: 13px !important;
+  font-weight: 700 !important;
+  cursor: pointer !important;
+  transition: all 0.2s ease !important;
+}
+
+.content-chip.is-active,
+.content-chip:hover {
+  background: #f0fdf4 !important;
+  border-color: #86efac !important;
+  color: #166534 !important;
+}
+
+.content-btn-row {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  gap: 12px !important;
+  margin-top: 24px !important;
+}
+
+.content-btn {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  height: 48px !important;
+  padding: 0 22px !important;
+  border-radius: 999px !important;
+  font-size: 15px !important;
+  font-weight: 800 !important;
+  text-decoration: none !important;
+}
+
+.content-btn--primary {
+  background: #16a34a !important;
+  color: #ffffff !important;
+  box-shadow: 0 12px 28px rgba(22, 163, 74, 0.25) !important;
+}
+
+.content-btn--ghost {
+  background: #ffffff !important;
+  color: #0f172a !important;
+  border: 1px solid #e2e8f0 !important;
+}
+
+.content-cta {
+  margin-top: 28px !important;
+  background: linear-gradient(135deg, #14532d, #166534 45%, #15803d) !important;
+  border-radius: 24px !important;
+  padding: 36px 28px !important;
+  color: #ffffff !important;
+}
+
+.content-cta h2 {
+  margin: 0 !important;
+  font-size: clamp(1.5rem, 3vw, 2.1rem) !important;
+  font-weight: 800 !important;
+  color: #ffffff !important;
+}
+
+.content-cta p {
+  margin: 12px 0 0 !important;
+  color: rgba(255, 255, 255, 0.86) !important;
+  line-height: 1.6 !important;
+}
+
+.content-cta .content-btn--primary {
+  background: #ffffff !important;
+  color: #166534 !important;
+  box-shadow: none !important;
+}
+
+.content-cta .content-btn--ghost {
+  background: transparent !important;
+  color: #ffffff !important;
+  border: 1px solid rgba(255, 255, 255, 0.35) !important;
+}
+
+/* Projects */
+.proj-case {
+  background: #ffffff !important;
+  border: 1px solid #e2e8f0 !important;
+  border-radius: 22px !important;
+  padding: 28px !important;
+  margin-bottom: 20px !important;
+  box-shadow: 0 12px 32px rgba(15, 23, 42, 0.04) !important;
+}
+
+.proj-case__tag {
+  display: inline-block !important;
+  margin: 0 0 10px !important;
+  font-size: 12px !important;
+  font-weight: 800 !important;
+  letter-spacing: 0.08em !important;
+  text-transform: uppercase !important;
+  color: #16a34a !important;
+}
+
+.proj-case__title {
+  margin: 0 !important;
+  font-size: 22px !important;
+  font-weight: 800 !important;
+  color: #0f172a !important;
+  line-height: 1.3 !important;
+}
+
+.proj-case__loc {
+  margin: 8px 0 0 !important;
+  font-size: 14px !important;
+  color: #64748b !important;
+}
+
+.proj-case__body {
+  margin: 16px 0 0 !important;
+  display: grid !important;
+  gap: 10px !important;
+}
+
+.proj-case__body p {
+  margin: 0 !important;
+  font-size: 15px !important;
+  line-height: 1.6 !important;
+  color: #475569 !important;
+}
+
+.proj-metrics {
+  display: grid !important;
+  grid-template-columns: 1fr !important;
+  gap: 12px !important;
+  margin-top: 20px !important;
+}
+
+.proj-metric {
+  background: #f8fafc !important;
+  border: 1px solid #e2e8f0 !important;
+  border-radius: 14px !important;
+  padding: 14px 16px !important;
+}
+
+.proj-metric span {
+  display: block !important;
+  font-size: 12px !important;
+  font-weight: 700 !important;
+  color: #64748b !important;
+  margin-bottom: 4px !important;
+}
+
+.proj-metric strong {
+  font-size: 18px !important;
+  font-weight: 800 !important;
+  color: #0f172a !important;
+}
+
+.proj-grid {
+  display: grid !important;
+  grid-template-columns: 1fr !important;
+  gap: 14px !important;
+  margin-top: 20px !important;
+}
+
+.proj-mini {
+  background: #f8fafc !important;
+  border: 1px solid #e2e8f0 !important;
+  border-radius: 16px !important;
+  padding: 18px !important;
+  font-size: 14px !important;
+  line-height: 1.55 !important;
+  color: #334155 !important;
+  font-weight: 600 !important;
+}
+
+/* FAQ */
+.faq-tabs {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  gap: 10px !important;
+  margin-top: 22px !important;
+}
+
+.faq-list {
+  display: grid !important;
+  gap: 12px !important;
+}
+
+.faq-acc {
+  background: #ffffff !important;
+  border: 1px solid #e2e8f0 !important;
+  border-radius: 16px !important;
+  padding: 0 !important;
+  overflow: hidden !important;
+  box-shadow: 0 8px 20px rgba(15, 23, 42, 0.03) !important;
+}
+
+.faq-acc summary {
+  list-style: none !important;
+  cursor: pointer !important;
+  padding: 18px 20px !important;
+  font-size: 15px !important;
+  font-weight: 700 !important;
+  color: #0f172a !important;
+  line-height: 1.45 !important;
+  position: relative !important;
+  padding-right: 48px !important;
+}
+
+.faq-acc summary::-webkit-details-marker {
+  display: none !important;
+}
+
+.faq-acc summary::after {
+  content: "+" !important;
+  position: absolute !important;
+  right: 20px !important;
+  top: 50% !important;
+  transform: translateY(-50%) !important;
+  width: 28px !important;
+  height: 28px !important;
+  border-radius: 999px !important;
+  background: #f0fdf4 !important;
+  color: #16a34a !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  font-size: 18px !important;
+  font-weight: 700 !important;
+}
+
+.faq-acc[open] summary::after {
+  content: "–" !important;
+}
+
+.faq-acc p {
+  margin: 0 !important;
+  padding: 0 20px 20px !important;
+  font-size: 14px !important;
+  line-height: 1.65 !important;
+  color: #64748b !important;
+}
+
+@media (min-width: 640px) {
+  .proj-metrics {
+    grid-template-columns: repeat(3, 1fr) !important;
+  }
+
+  .proj-grid {
+    grid-template-columns: 1fr 1fr !important;
+  }
+}
+
+@media (min-width: 1024px) {
+  .content-hero {
+    padding: 64px 0 48px !important;
+  }
+
+  .content-section {
+    padding: 48px 0 88px !important;
+  }
+
+  .proj-grid {
+    grid-template-columns: repeat(3, 1fr) !important;
+  }
+}
+
+/* Fix cramped / overlapping spacing across light pages */
+.page-wrap {
+  padding-top: 80px !important;
+}
+
+.home-h1,
+.calc-h1,
+.svc-h1,
+.content-h1 {
+  letter-spacing: -0.01em !important;
+}
+
+.home-section + .home-section,
+.svc-main,
+.calc-main {
+  scroll-margin-top: 100px !important;
+}
+
+#why-us,
+#how-it-works {
+  scroll-margin-top: 100px !important;
+}

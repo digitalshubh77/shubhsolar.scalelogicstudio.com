@@ -1,0 +1,282 @@
+/* =========================================================
+   SERVICES PAGE — clean professional light theme
+   ========================================================= */
+
+.svc-page {
+  background: #ffffff !important;
+  color: #0f172a !important;
+}
+
+.svc-container {
+  width: 100% !important;
+  max-width: 1200px !important;
+  margin: 0 auto !important;
+  padding: 0 28px !important;
+}
+
+.svc-hero {
+  padding: 56px 0 40px !important;
+  background:
+    radial-gradient(circle at 90% 0%, rgba(34, 197, 94, 0.12), transparent 28%),
+    linear-gradient(180deg, #f8fafc 0%, #ffffff 70%) !important;
+}
+
+.svc-eyebrow {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+  padding: 8px 14px !important;
+  border-radius: 999px !important;
+  background: #f0fdf4 !important;
+  border: 1px solid #bbf7d0 !important;
+  color: #166534 !important;
+  font-size: 13px !important;
+  font-weight: 700 !important;
+  margin: 0 0 16px !important;
+}
+
+.svc-h1 {
+  margin: 0 !important;
+  max-width: 18ch !important;
+  font-size: clamp(2rem, 4vw, 3.3rem) !important;
+  line-height: 1.1 !important;
+  font-weight: 800 !important;
+  letter-spacing: -0.01em !important;
+  color: #0f172a !important;
+}
+
+.svc-lead {
+  margin: 14px 0 0 !important;
+  max-width: 64ch !important;
+  font-size: 16px !important;
+  line-height: 1.7 !important;
+  color: #64748b !important;
+}
+
+.svc-actions {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  gap: 12px !important;
+  margin-top: 24px !important;
+}
+
+.svc-btn {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  height: 48px !important;
+  padding: 0 22px !important;
+  border-radius: 999px !important;
+  font-size: 15px !important;
+  font-weight: 800 !important;
+  text-decoration: none !important;
+  transition: transform 0.2s ease, background 0.2s ease !important;
+}
+
+.svc-btn--primary {
+  background: #16a34a !important;
+  color: #ffffff !important;
+  box-shadow: 0 12px 28px rgba(22, 163, 74, 0.28) !important;
+}
+
+.svc-btn--primary:hover {
+  background: #15803d !important;
+  transform: translateY(-1px) !important;
+}
+
+.svc-btn--ghost {
+  background: #ffffff !important;
+  color: #0f172a !important;
+  border: 1px solid #e2e8f0 !important;
+}
+
+.svc-btn--ghost:hover {
+  border-color: #16a34a !important;
+  color: #15803d !important;
+}
+
+.svc-trust {
+  display: grid !important;
+  grid-template-columns: 1fr !important;
+  gap: 12px !important;
+  margin-top: 28px !important;
+}
+
+.svc-trust__item {
+  background: #ffffff !important;
+  border: 1px solid #e2e8f0 !important;
+  border-radius: 14px !important;
+  padding: 14px 16px !important;
+  font-size: 13px !important;
+  font-weight: 700 !important;
+  color: #334155 !important;
+}
+
+.svc-main {
+  padding: 24px 0 72px !important;
+}
+
+.svc-list {
+  display: grid !important;
+  gap: 24px !important;
+}
+
+.svc-card {
+  background: #ffffff !important;
+  border: 1px solid #e2e8f0 !important;
+  border-radius: 24px !important;
+  padding: 28px !important;
+  box-shadow: 0 14px 36px rgba(15, 23, 42, 0.05) !important;
+  transition: transform 0.25s ease, box-shadow 0.25s ease !important;
+}
+
+.svc-card:hover {
+  transform: translateY(-4px) !important;
+  box-shadow: 0 20px 48px rgba(15, 23, 42, 0.08) !important;
+}
+
+.svc-card__head {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  align-items: center !important;
+  gap: 14px !important;
+  margin-bottom: 10px !important;
+}
+
+.svc-card__icon {
+  width: 48px !important;
+  height: 48px !important;
+  border-radius: 14px !important;
+  background: #f0fdf4 !important;
+  color: #16a34a !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  flex-shrink: 0 !important;
+}
+
+.svc-card__title {
+  margin: 0 !important;
+  font-size: 24px !important;
+  font-weight: 800 !important;
+  color: #0f172a !important;
+}
+
+.svc-card__tag {
+  display: inline-flex !important;
+  align-items: center !important;
+  padding: 6px 12px !important;
+  border-radius: 999px !important;
+  background: #ecfdf5 !important;
+  border: 1px solid #bbf7d0 !important;
+  color: #166534 !important;
+  font-size: 12px !important;
+  font-weight: 800 !important;
+}
+
+.svc-card__subtitle {
+  margin: 8px 0 0 !important;
+  font-size: 16px !important;
+  font-weight: 700 !important;
+  color: #16a34a !important;
+}
+
+.svc-card__body {
+  margin: 12px 0 0 !important;
+  font-size: 15px !important;
+  line-height: 1.65 !important;
+  color: #64748b !important;
+  max-width: 70ch !important;
+}
+
+.svc-points {
+  display: grid !important;
+  grid-template-columns: 1fr !important;
+  gap: 10px !important;
+  margin: 20px 0 0 !important;
+  list-style: none !important;
+  padding: 0 !important;
+}
+
+.svc-points li {
+  background: #f8fafc !important;
+  border: 1px solid #e2e8f0 !important;
+  border-radius: 14px !important;
+  padding: 14px 16px !important;
+  font-size: 14px !important;
+  font-weight: 600 !important;
+  color: #334155 !important;
+  line-height: 1.45 !important;
+}
+
+.svc-meta {
+  margin: 18px 0 0 !important;
+  font-size: 14px !important;
+  color: #64748b !important;
+}
+
+.svc-meta strong {
+  color: #0f172a !important;
+}
+
+.svc-micro {
+  margin: 10px 0 0 !important;
+  font-size: 14px !important;
+  font-weight: 700 !important;
+  color: #166534 !important;
+}
+
+.svc-cta {
+  margin-top: 28px !important;
+  background: linear-gradient(135deg, #14532d, #166534 45%, #15803d) !important;
+  border-radius: 24px !important;
+  padding: 36px 28px !important;
+  color: #ffffff !important;
+}
+
+.svc-cta h2 {
+  margin: 0 !important;
+  font-size: clamp(1.5rem, 3vw, 2.2rem) !important;
+  font-weight: 800 !important;
+  color: #ffffff !important;
+}
+
+.svc-cta p {
+  margin: 10px 0 0 !important;
+  color: rgba(255, 255, 255, 0.85) !important;
+  font-size: 15px !important;
+  line-height: 1.6 !important;
+  max-width: 54ch !important;
+}
+
+.svc-cta .svc-btn--primary {
+  background: #ffffff !important;
+  color: #166534 !important;
+  box-shadow: none !important;
+}
+
+.svc-cta .svc-btn--ghost {
+  background: transparent !important;
+  color: #ffffff !important;
+  border: 1px solid rgba(255, 255, 255, 0.35) !important;
+}
+
+@media (min-width: 768px) {
+  .svc-trust {
+    grid-template-columns: repeat(3, 1fr) !important;
+  }
+
+  .svc-points {
+    grid-template-columns: repeat(3, 1fr) !important;
+  }
+}
+
+@media (min-width: 1024px) {
+  .svc-hero {
+    padding: 64px 0 48px !important;
+  }
+
+  .svc-card {
+    padding: 32px !important;
+  }
+}
