@@ -1,9 +1,10 @@
-export const BUSINESS_PHONE = "919876543210";
-export const BUSINESS_PHONE_DISPLAY = "+91 98765 43210";
+export const BUSINESS_PHONE = "918275720252";
+export const BUSINESS_PHONE_DISPLAY = "+91 82757 20252";
 export const BUSINESS_ADDRESS = "Shubh Solar, AP Sangli, Sangli, Maharashtra 416416";
 export const BUSINESS_EMAIL = "info@shubhsolar.in";
 
-const DEFAULT_WHATSAPP_MESSAGE = "Hi Shubh Solar! I want a free solar quote.";
+const DEFAULT_WHATSAPP_MESSAGE =
+  "Hi Shubh Solar! I am interested in rooftop solar. Please share a free quote and savings estimate.";
 
 export type InquiryPayload = {
   name: string;

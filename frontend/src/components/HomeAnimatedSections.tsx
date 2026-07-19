@@ -47,6 +47,7 @@ const services = [
     tag: "Most Popular · 1–10 kW",
     desc: "Homes & apartments with net metering and subsidy filing.",
     href: "/services",
+    calcHref: "/calculator?property=residential",
   },
   {
     icon: Building2,
@@ -54,6 +55,7 @@ const services = [
     tag: "10–100 kW for shops & offices",
     desc: "Cut daytime load costs for retail, clinics and offices.",
     href: "/services",
+    calcHref: "/calculator?property=commercial",
   },
   {
     icon: Factory,
@@ -61,6 +63,7 @@ const services = [
     tag: "100 kW+ for factories & MIDC",
     desc: "High-capacity plants with remote monitoring.",
     href: "/services",
+    calcHref: "/calculator?property=industrial",
   },
   {
     icon: Wrench,
@@ -68,6 +71,7 @@ const services = [
     tag: "Cleaning, checks & monitoring",
     desc: "Annual health checks and panel cleaning by local team.",
     href: "/services",
+    calcHref: undefined,
   },
 ];
 
@@ -150,9 +154,16 @@ export default function HomeAnimatedSections() {
                 <h3 className="home-service__name">{item.name}</h3>
                 <p className="home-service__tag">{item.tag}</p>
                 <p className="home-service__desc">{item.desc}</p>
-                <Link href={item.href} className="home-link home-service__link">
-                  Read More →
-                </Link>
+                <div className="home-service__actions">
+                  <Link href={item.href} className="home-link home-service__link">
+                    Read More →
+                  </Link>
+                  {item.calcHref ? (
+                    <Link href={item.calcHref} className="home-service__calculate">
+                      Calculate Savings
+                    </Link>
+                  ) : null}
+                </div>
               </MotionCard>
             ))}
           </div>

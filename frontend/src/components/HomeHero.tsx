@@ -54,16 +54,20 @@ export default function HomeHero() {
   return (
     <section className="home-hero home-hero--video">
       <div className="home-hero__media" aria-hidden="true">
-        <video
-          className="home-hero__video"
-          autoPlay
-          muted
-          loop
-          playsInline
-          preload="auto"
-        >
-          <source src="/hero-solar.mp4" type="video/mp4" />
-        </video>
+        <div className="home-hero__sun" />
+        <div className="home-hero__solar-scene">
+          <div className="home-hero__solar-panel">
+            {Array.from({ length: 24 }).map((_, index) => (
+              <span key={index} />
+            ))}
+          </div>
+          <div className="home-hero__solar-base" />
+        </div>
+        <div className="home-hero__orbit home-hero__orbit--one" />
+        <div className="home-hero__orbit home-hero__orbit--two" />
+        <div className="home-hero__energy-stream home-hero__energy-stream--one" />
+        <div className="home-hero__energy-stream home-hero__energy-stream--two" />
+        <div className="home-hero__energy-stream home-hero__energy-stream--three" />
         <div className="home-hero__overlay" />
         <div className="home-hero__glow" />
         <div className="home-hero__grain" />

@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { motion } from "framer-motion";
-import { Calculator, TrendingDown } from "lucide-react";
+import { Building2, Calculator, Factory, Home, TrendingDown } from "lucide-react";
 
 const ease = [0.22, 1, 0.36, 1] as const;
 
@@ -23,10 +23,15 @@ export default function HomeCalcTeaser() {
             </div>
             <div>
               <p className="home-calc-teaser__eyebrow">Free Savings Calculator</p>
-              <h3 className="home-calc-teaser__title">See your exact savings in 30 seconds</h3>
+              <h3 className="home-calc-teaser__title">Model your solar savings in 30 seconds</h3>
               <p className="home-calc-teaser__text">
-                Enter your monthly bill — get system size, subsidy amount, EMI and 25-year savings instantly.
+                Get system size, generation, subsidy, ROI, payback and 25-year cash flow instantly.
               </p>
+              <div className="home-calc-teaser__types" aria-label="Calculator presets">
+                <Link href="/calculator?property=residential"><Home size={14} /> Residential</Link>
+                <Link href="/calculator?property=commercial"><Building2 size={14} /> Commercial</Link>
+                <Link href="/calculator?property=industrial"><Factory size={14} /> Industrial</Link>
+              </div>
             </div>
           </div>
           <div className="home-calc-teaser__right">

@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Clock, Mail, MapPin, Phone, Sun } from "lucide-react";
+import { ArrowRight, BadgeCheck, Clock, Mail, MapPin, Phone, Sun, Zap } from "lucide-react";
 import { BUSINESS_ADDRESS, BUSINESS_EMAIL, BUSINESS_PHONE_DISPLAY, telLink } from "@/lib/contact";
 
 const quickLinks = [
@@ -22,8 +22,21 @@ export default function Footer() {
   return (
     <footer className="site-footer">
       <div className="site-footer__inner">
+        <div className="site-footer__cta">
+          <div className="site-footer__cta-icon" aria-hidden="true">
+            <Zap size={22} />
+          </div>
+          <div className="site-footer__cta-copy">
+            <span>Free rooftop assessment</span>
+            <h2>Ready to turn your roof into monthly savings?</h2>
+          </div>
+          <Link href="/contact" className="site-footer__cta-button">
+            Get Free Quote <ArrowRight size={16} />
+          </Link>
+        </div>
+
         <div className="site-footer__grid">
-          <div>
+          <div className="site-footer__brand">
             <Link href="/" className="site-logo">
               <span className="site-logo__icon">
                 <Sun size={22} />
@@ -35,6 +48,10 @@ export default function Footer() {
             <p className="site-footer__brand-text">
               Powering Maharashtra with clean solar energy. 8+ years of trusted installations across Sangli and western Maharashtra.
             </p>
+            <div className="site-footer__verified">
+              <BadgeCheck size={16} />
+              <span>MNRE empanelled · Local service team</span>
+            </div>
             <div className="site-footer__socials">
               <a href="#" className="site-footer__social" aria-label="Facebook">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
