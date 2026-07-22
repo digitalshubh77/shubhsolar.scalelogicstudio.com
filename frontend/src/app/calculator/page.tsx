@@ -7,7 +7,7 @@ import "../calculator-page.css";
 export const metadata: Metadata = {
   title: "Solar Savings Calculator | Shubh Solar Sangli",
   description:
-    "Calculate rooftop solar system size, generation, subsidy, cost, savings, ROI, payback and environmental impact for residential, commercial and industrial properties.",
+    "Estimate rooftop solar system size, generation, savings, and CO₂ reduction. Book a free site survey via WhatsApp.",
   alternates: { canonical: "/calculator" },
 };
 

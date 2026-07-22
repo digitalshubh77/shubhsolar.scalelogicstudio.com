@@ -1,17 +1,14 @@
 "use client";
 
 import { useCallback, useMemo, useReducer } from "react";
-import { calculateComparisons, calculateSolar, validateInputs } from "./calculate";
+import { calculateSolar, validateInputs } from "./calculate";
 import type { CalculatorInputs } from "./types";
 
 const DEFAULT_INPUTS: CalculatorInputs = {
   monthlyBill: 5000,
-  state: "Maharashtra",
-  city: "Sangli",
+  state: "",
+  city: "",
   propertyType: "residential",
-  roofType: "rcc",
-  panelType: "topcon",
-  battery: "no",
 };
 
 type Action =
@@ -22,8 +19,9 @@ type Action =
 function reducer(state: CalculatorInputs, action: Action): CalculatorInputs {
   if (action.type === "reset") return DEFAULT_INPUTS;
   if (action.type === "property") {
-    const defaultBill = action.value === "residential" ? 5000 : action.value === "commercial" ? 25000 : 100000;
-    return { ...state, propertyType: action.value, monthlyBill: defaultBill, monthlyUnits: undefined };
+    const defaultBill =
+      action.value === "residential" ? 5000 : action.value === "commercial" ? 25000 : 100000;
+    return { ...state, propertyType: action.value, monthlyBill: defaultBill };
   }
   return { ...state, [action.key]: action.value };
 }
@@ -32,14 +30,11 @@ export function useSolarCalculator(initialProperty?: CalculatorInputs["propertyT
   const [inputs, dispatch] = useReducer(reducer, {
     ...DEFAULT_INPUTS,
     propertyType: initialProperty ?? DEFAULT_INPUTS.propertyType,
-    monthlyBill: initialProperty === "commercial" ? 25000 : initialProperty === "industrial" ? 100000 : 5000,
+    monthlyBill:
+      initialProperty === "commercial" ? 25000 : initialProperty === "industrial" ? 100000 : 5000,
   });
 
   const result = useMemo(() => calculateSolar(inputs), [inputs]);
-  const comparisons = useMemo(
-    () => calculateComparisons(inputs, result.systemSizeKw),
-    [inputs, result.systemSizeKw],
-  );
   const errors = useMemo(() => validateInputs(inputs), [inputs]);
   const isValid = Object.keys(errors).length === 0;
 
@@ -56,5 +51,5 @@ export function useSolarCalculator(initialProperty?: CalculatorInputs["propertyT
 
   const reset = useCallback(() => dispatch({ type: "reset" }), []);
 
-  return { inputs, result, comparisons, errors, isValid, setInput, setProperty, reset };
+  return { inputs, result, errors, isValid, setInput, setProperty, reset };
 }

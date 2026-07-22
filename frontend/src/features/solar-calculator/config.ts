@@ -107,6 +107,12 @@ export const PROPERTY_LABELS: Record<PropertyType, string> = {
   industrial: "Industrial",
 };
 
+export const SOLAR_TYPE_LABELS = {
+  "on-grid": "On-Grid",
+  hybrid: "Hybrid",
+  "off-grid": "Off-Grid",
+} as const;
+
 export const ROOF_LABELS: Record<RoofType, string> = {
   rcc: "RCC / Concrete",
   metal: "Metal Sheet",
