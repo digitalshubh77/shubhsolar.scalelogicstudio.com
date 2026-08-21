@@ -13,6 +13,15 @@ export const metadata: Metadata = {
   description:
     "Cut your electricity bill by up to 90% with Shubh Solar. 750+ homes & businesses powered across Sangli. PM Surya Ghar subsidy assistance. Free site visit.",
   keywords: "solar panels Sangli, rooftop solar Maharashtra, PM Surya Ghar subsidy, solar installation Sangli",
+  icons: {
+    icon: [
+      { url: "/favicon.ico", sizes: "any" },
+      { url: "/icon.svg", type: "image/svg+xml" },
+      { url: "/icon-192.png", sizes: "192x192", type: "image/png" },
+      { url: "/icon-512.png", sizes: "512x512", type: "image/png" },
+    ],
+    apple: [{ url: "/apple-icon.png", sizes: "180x180", type: "image/png" }],
+  },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
